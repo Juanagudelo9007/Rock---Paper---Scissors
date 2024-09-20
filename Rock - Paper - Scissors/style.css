@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono", monospace;
+    box-sizing: border-box;
+}
+
+body{
+ background-color: #eee;
+ color: black;
+ text-align: center;
+margin-top: 320px;
+
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.button{ 
+   background-color:  transparent;
+   font-weight: 800;
+   color: #444; 
+   font-size: 1.2rem;
+   padding: 1rem 1.5rem;
+   cursor: pointer;
+   border: 2px solid #eee;
+   border-radius: .5rem;
+   transition: all 1s ease;
+   box-shadow: .5rem .5rem 1rem #ccc, 
+   -.5rem -.5rem 1rem #fff;
+}
+
+.button:hover{ 
+    box-shadow: .5rem .5rem 1rem #fff, 
+    -.5rem -.5rem 1rem #ccc;
+}
+
+.button:active{ 
+    box-shadow: inset .2rem .2rem 1rem #fff, 
+    inset -.2rem -.2rem 1rem #ccc;
+}
+
+.choices button:disabled{
+    background-color:  #ccc;
+    cursor: not-allowed;
+
+}
+
+#score { 
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
